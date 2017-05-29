@@ -1,15 +1,79 @@
 *{
-	-webkit-box-sizing:boder-box;
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
 }
+/* top bar menu */
+    .top-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #000;
+        color: #FFF;
+        font-family: arial;
+        font-weight: bold;
+        height: 48px;
+        line-height: 48px;
+    }
+    .top-bar ul{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+    }
+    .top-bar li{
+        list-style-type: none;
+        padding-right: 25px;
+    }
+    .top-bar li a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .top-bar li a:hover{
+        color:#EA0206;
+    }
+    .fb a:hover{
+        color:#3B5998 !important;
+    }
+    .tw a:hover{
+        color:#9AE4E8 !important;
+    }
+    .inst a:hover{
+        color:#3F729B !important;
+    }
+    .yt a:hover{
+        color:#CC181E !important;
+    }
+    #sub-menu{
+        top:50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        background-color: #000;
+        color: #FFF;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+        line-height: 50px;
+        display: none;
+        z-index: 1000;
+    }
+    #sub-menu li{
+        flex-direction: column;
+        height: 30px;
+        margin-left: 5px;
 
+    }
+    .cincoLinks{
+        height: 170px !important;
+    }
+/* mobile */
 /* SETTEO DE MAPA */
 #map {
         height:600px;
         width: 80%;
         margin: auto;
+        z-index:2;
 }
 /*ARREGLOS NAV*/
 .fixed{
@@ -19,7 +83,7 @@
 /*ESTILOS BODY*/
 
 .subtitulos{
-margin: 5px 0px;
+margin: 8px 0px;
 border-bottom: 4px solid #333;
 }
 
@@ -44,6 +108,7 @@ border-bottom: 4px solid #333;
 font-family: 'Work Sans', sans-serif;
 font-weight: 700;
 font-size: 2.5em;
+margin-left: 1.5%;
 }
 
 p, li {
@@ -54,6 +119,26 @@ p, li {
 .rojo{
   color: red;
 }
+
+.pie{
+  height: 80px;
+  background: #333;
+}
+.pie img{
+  margin-top: 10px;
+}
+.licencia-commons{
+  color: #FFF;
+  margin-top: 30px;
+}
+.commons{
+  color:#FFF;
+  text-decoration: none;
+}
+.commons:hover{
+  color:#FFF;
+}
+
 /* MENU MOBILE*/
 /*.mobile{
   display: none;
@@ -116,7 +201,7 @@ p, li {
 .top-menu, .main-menu {
   margin-left: 20px;
 }
-.top-menu h3, .main-menu h3 {
+.menu-mobile h3, .main-menu h3 {
   text-decoration:  underline #EA0000;
 
   color: #FFF;
