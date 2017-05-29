@@ -17,21 +17,50 @@
 	width: 100%;
 }
 /*ESTILOS BODY*/
+
+.subtitulos{
+margin: 5px 0px;
+border-bottom: 4px solid #333;
+}
+
+.subtitulos h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 24px;
+  background: #333;
+  line-height: 1;
+  color:#FFF;  
+}
+
 .familia-fuente{
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 700;
-	font-size: 24px;
+	font-weight: 550;
+	font-size: 1.3em;
+  padding: 8px 5px;
+  margin-top: 5;
 }
+
+#titulo{
+font-family: 'Work Sans', sans-serif;
+font-weight: 700;
+font-size: 2.5em;
+}
+
 p, li {
 	font-family: 'Lato', sans-serif;
-	font-size: 1.2em;
-
+	font-size: 1em;
+  color: #333333;
+}
+.rojo{
+  color: red;
 }
 /* MENU MOBILE*/
 /*.mobile{
   display: none;
 }*/
-
+#mySidenav{
+  font-size: 1em;
+}
 #contenido{
   transition: margin-left .5s;
   padding: 16px;
