@@ -1,12 +1,12 @@
 *{
-	-webkit-box-sizing: border-box;
+	-webkit-box-sizing:boder-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
 }
 /* SETTEO DE MAPA */
 #map {
-        height:600px;
+        height: 500px;
         width: 80%;
         margin: auto;
 }
@@ -15,16 +15,34 @@
 	height: 60px;
 	width: 100%;
 }
-/*ESTILOS BODY*/
-.familia-fuente{
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 700;
-	font-size: 24px;
+/* MENU MOBILE*/
+/*.mobile{
+  display: none;
+}*/
+/*ARREGLO HEADINGS INFOMAP*/
+.infoTitle{
+	overflow-y: scroll;
 }
-p, li {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.2em;
-
+.infoTitle h1{
+	font-size: 18px;
+}
+.infoTitle h3{
+	font-size: 16px;
+}
+.infoTitle p{
+	font-size: 14px;
 }
 
+/* MEDIAS */
+@media (max-width: 700px) {
+  #map{
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  #map{
+    height: 300px;
+    width: 100%;
+  }
+}
 
