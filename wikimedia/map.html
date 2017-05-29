@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
     <title>Capacitaciones sobre Wikipedia</title>
     <meta charset="utf-8">
     <!-- DESCRIPCIÓN DE CONTENIDO -->
@@ -9,19 +8,15 @@
     <meta name="keywords" content="Wikimedia,Wiki,Wikipedia,Charlas,Capacitaciones,Capacitación">
     <meta name="author" content="Wikimedia, Daniela Belvedere, Constanza Yáñez Calderón">
       <!-- hojas de estilo -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- VIEWPORT-->
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- VIEWPORT-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-default fixed col-xs-12 col-sm-12 col-md-12">
+        <nav class="navbar navbar-default fixed col-xs-12 col-sm-12 col-md-12">
           <div class="navbar-header">
               <img  class="logo img-responsive" alt="Wikimedia Argentina - logo" src="img/logo-header.png">
           </div>
@@ -40,16 +35,61 @@
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- pull-right -->
-      </nav><!-- fin nav -->
+        </nav><!-- fin nav -->
+        <!-- menu mobile-->
+        <div class="mobile">
+          <div>
+                <a><i class="fa fa-arrow-left"></i></a>
+            </div><!-- fin header mobile-->
+          <div class="top-menu">
+                <h3 class="menu-location-title"> Top Menu </h3>
+                <ul>
+                  <li><a href="http://www.wikimedia.org.ar/#">Nosotros</a>
+                <ul class="sub-menu">
+                  <li><a href="http://www.wikimedia.org.ar/equipo/">El Equipo</a></li>
+                  <li><a href="http://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
+                  <li><a href="http://www.wikimedia.org.ar/que-es/estatuto-social/">Estatuto Social</a></li>
+                  <li><a href="http://www.wikimedia.org.ar/que-es/finanzas/">Balances</a></li>
+                  <li><a href="http://www.wikimedia.org.ar/donaciones/">Donaciones</a></li>
+                </ul><!--fin submenu-->
+                  </li><!-- fin li nosotros-->
+                  <li><a href="http://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
+              <li><a href="http://www.wikimedia.org.ar/glam/">Promoción de instituciones culturales</a></li>
+              <li><a href="http://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
+              <li><a href="http://www.wikimedia.org.ar/proyectos/brecha-de-genero/">Género</a>
+                <ul class="sub-menu">
+                  <li><a href="http://www.wikimedia.org.ar/category/les-expertes/">Les Expertes</a></li>
+                </ul><!-- fin class submenu-->
+              </li><!-- fin li género-->
+              <li><a href="http://www.wikimedia.org.ar/contacto/">Contacto</a></li>
+                </ul><!-- fin ul top menu-->
+                </div><!-- fin top-->
+                <div class="main-menu">
+                <h3>Menú principal</h3>
+                    <ul>
+                      <li><a>Programas</a>
+                    <ul class="sub-menu">
+                      <li><a href="http://www.wikimedia.org.ar/glam/">Promoción de instituciones culturales</a></li>
+                      <li><a href="http://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
+                      <li><a href="http://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
+                    </ul><!--sub menu fin-->
+                  </li><!-- fin li programas-->
+                  <li><a href="http://campus.wikimedia.org.ar/">Campus virtual</a></li>
+                  <li><a href="http://www.wikimedia.org.ar/a-las-fuentes/">A las fuentes</a></li>
+                  <li><a href="http://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
+                </ul><!-- fin menu principal-->
+            </div><!-- fin main menu-->
+        </div><!-- fin class block -->
       <header class="row">
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
           <h1 class="familia-fuente">CAPACITACIONES Y CHARLAS SOBRE WIKIPEDIA</h1>
         </div>
       </header><!-- fin header-->
       <div class="row" id="map"></div>
-      <div class="row contenido">
+      <div class="contenido">
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
-          <h3 class="familia-fuente">MEJORAR EL APRENDIZAJE DE QUÍMICA Y BIOLOGÍA MOLECULAR CON EL USO DE WIKIPEDIA</h3>      
+          <h3 class="familia-fuente">MEJORAR EL APRENDIZAJE DE QUÍMICA Y BIOLOGÍA MOLECULAR CON EL USO DE WIKIPEDIA</h3>
+
           <p><strong>Profesora:</strong> Georgina Nieto Castañeda</p>
           <p><strong>Lugar: </strong> Universidad Nacional Autónoma de México (UNAM)</p>
           <p><strong>Alcance: </strong> 50 estudiantes</p>
@@ -63,9 +103,9 @@
               <li>Actualmente en el proyecto han participado alrededor de 50 estudiantes en un año, y alrededor del mismo número de artículos creados.</li>
               <li>Mientras más libertad se proporcione a los estudiantes en colaborar de la manera que lo deseen mejorando contenidos o creándolos, mejores resultados se obtienen, ya que lo disfrutan y desarrollan investigaciones de mucho mejor calidad.</li>
             </ul>
-        </div>  
+        </div>
+        
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
-
           <h3>REDUCIR LA BRECHA DE GÉNERO EN WIKIPEDIA DESDE ESPACIOS UNIVERSITARIOS</h3>
 
           <p><strong>Profesora: </strong>Ester Bonet</p>
@@ -111,7 +151,8 @@
               <li>25 entradas creadas. De estas dos artículos hechos colectivamente: “Estetización de la política” y “Testimonio”.</li>
               <li>Como una culminación de este periodo se llevó a cabo el Editatón Filosofía en México. </li>
             </ul> 
-        </div>  
+        </div>
+
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
           <h3 class="familia-fuente">WIKIPEDIA Y SU USO EN LA LICENCIATURA EN LENGUA Y LITERATURA HISPÁNICA</h3>
           
@@ -131,8 +172,8 @@
               <li>23 artículos creados</li>
             </ul>
         </div>
-        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
 
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
           <h3 class="familia-fuente">WIKIPEDIA EN LA UNIVERSIDAD: UNA EXPERIENCIA DE FORMACIÓN DOCENTE EN UNIVERSIDADES PÚBLICAS DE ECUADOR</h3>
 
           <p><strong>Profesora: </strong>Paola Ricaurte Quijano</p>
@@ -168,8 +209,8 @@
               <li>Se logró escalar la propuesta y replicar durante el 2017 el proyecto. </li>
             </ul>
       </div>
-        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
 
+       <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
           <h3 class="familia-fuente">Club de Edición </h3>
 
           <p><strong>Contraparte: </strong> Ministerio de Educación de la provincia de La Rioja</p>
@@ -226,12 +267,13 @@
               <li>Desde 2014 se han creado más de 60 artículos en Wikipedia</li>
             </ul>
         </div>
+
       </div><!-- fin contenido-->
     </div><!-- fin container-->
-      <script>
+    <script>
         function initMap() {
           //Declaracion de lugares
-          var unam = {lat: 19.324431,lng: -99.184558};
+          var unam = {lat: 19.324431, lng: -99.184558};
           var uab = {lat:41.502666, lng:2.104300};
           var ug= {lat:-2.182581, lng:-79.897665};
           var unrn = {lat:-40.808909, lng:-62.993932};
@@ -245,12 +287,15 @@
           var logo = 'img/pin.png'
           //Declaracion de mapa
           var map = new google.maps.Map(document.getElementById('map'), {
-            zoom:3,
-            center: centrado
+            zoom: 2,
+            center:centrado,
+            zoomControl: false,
+            scaleControl: false
+
           });// fin objeto mapa
 
         //Declaración de contenido A
-        var contentStringA = '<div id="content">'+
+        var contentStringA = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Universidad Nacional Autónoma de México (UNAM)</h1>'+
@@ -277,7 +322,7 @@
           infowindowA.open(map, markerA);
         });
          //Declaración de contenido B
-        var contentStringB = '<div id="content">'+
+        var contentStringB = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Universitat Autònoma de Barcelona (UAB)</h1>'+
@@ -302,7 +347,7 @@
           infowindowB.open(map, markerB);
         });
         //Declaración de contenido C
-        var contentStringC = '<div id="content">'+
+        var contentStringC = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Universidad de Guayaquil</h1>'+
@@ -327,7 +372,7 @@
           infowindowC.open(map, markerC);
         });
         //Declaración de contenido D
-        var contentStringD = '<div id="content">'+
+        var contentStringD = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Universidad Nacional de Río Negro</h1>'+
@@ -352,7 +397,7 @@
           infowindowD.open(map, markerD);
         });
         //Declaración de contenido E
-        var contentStringE = '<div id="content">'+
+        var contentStringE = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading"> Ministerio de Educación de la Provincia de La Rioja</h1>'+
@@ -377,7 +422,7 @@
           infowindowE.open(map, markerE);
         });
         //Declaración de contenido F
-        var contentStringF = '<div id="content">'+
+        var contentStringF = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading"> Instituto Técnico Huergo</h1>'+
@@ -402,7 +447,7 @@
           infowindowF.open(map, markerF);
         });
         //Declaración de contenido G
-        var contentStringG = '<div id="content">'+
+        var contentStringG = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading"> Universidad Alberto Hurtado (UAH)</h1>'+
