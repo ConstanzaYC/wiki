@@ -15,34 +15,19 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   </head>
   <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-default fixed col-xs-12 col-sm-12 col-md-12">
-          <div class="navbar-header">
-              <img  class="logo img-responsive" alt="Wikimedia Argentina - logo" src="img/logo-header.png">
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="pull-right">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Capacitaciones <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Capacitacion</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Capacitacion</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- pull-right -->
-        </nav><!-- fin nav -->
+    <div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>
+          </span>
+    </div>
+
+
         <!-- menu mobile-->
-        <div class="mobile">
-          <div>
-                <a><i class="fa fa-arrow-left"></i></a>
-            </div><!-- fin header mobile-->
+        <div id="mySidenav" class="sidenav">
+            <div class="control-boton closebtn">
+                <a class="boton-close" onclick="closeNav()"><i class="fa fa-arrow-left flecha"></i></a>
+            </div><!-- fin control-boton -->
           <div class="top-menu">
-                <h3 class="menu-location-title"> Top Menu </h3>
+                <h3> Top Menu </h3>
                 <ul>
                   <li><a href="http://www.wikimedia.org.ar/#">Nosotros</a>
                 <ul class="sub-menu">
@@ -63,7 +48,7 @@
               </li><!-- fin li género-->
               <li><a href="http://www.wikimedia.org.ar/contacto/">Contacto</a></li>
                 </ul><!-- fin ul top menu-->
-                </div><!-- fin top-->
+            </div><!-- fin top-->
                 <div class="main-menu">
                 <h3>Menú principal</h3>
                     <ul>
@@ -80,6 +65,8 @@
                 </ul><!-- fin menu principal-->
             </div><!-- fin main menu-->
         </div><!-- fin class block -->
+
+    <div class="container-fluid" id="contenido">
       <header class="row">
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
           <h1 class="familia-fuente">CAPACITACIONES Y CHARLAS SOBRE WIKIPEDIA</h1>
@@ -106,7 +93,7 @@
         </div>
         
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
-          <h3>REDUCIR LA BRECHA DE GÉNERO EN WIKIPEDIA DESDE ESPACIOS UNIVERSITARIOS</h3>
+          <h3 class="familia-fuente">REDUCIR LA BRECHA DE GÉNERO EN WIKIPEDIA DESDE ESPACIOS UNIVERSITARIOS</h3>
 
           <p><strong>Profesora: </strong>Ester Bonet</p>
           <p><strong>Lugar:</strong> Universitat Autònoma de Barcelona (UAB)</p>
@@ -472,6 +459,20 @@
           infowindowG.open(map, markerG);
         });
       }//ESTE CIERRA TODO
+    </script>
+    <!-- script para menu mobile -->
+    <script>
+      
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("contenido").style.marginLeft = "300px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("contenido").style.marginLeft= "0";
+    }
+
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUvcl9Kyp6wOAiiMGjRdpPYVpKd2vQtc8&callback=initMap">

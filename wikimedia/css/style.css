@@ -32,6 +32,78 @@ p, li {
   display: none;
 }*/
 
+#contenido{
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.closebtn{
+  height:60px;
+  width: 100%;
+  background-color: #000;
+  border-bottom: 2px solid #EA0000;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+      /* scroll bar */
+     .sidenav::-webkit-scrollbar {
+          width: 12px;
+      }
+       
+      .sidenav::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+          border-radius: 10px;
+      }
+       
+      .sidenav::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+      }
+
+
+.sidenav a {
+    padding: 8px 8px 8px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.top-menu, .main-menu {
+  margin-left: 20px;
+}
+.top-menu h3, .main-menu h3 {
+  text-decoration:  underline #EA0000;
+
+  color: #FFF;
+}
+.sidenav li{
+  list-style-type: none;
+  color:#ECECF0;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    /*font-size: 36px;
+    margin-left: 50px;*/
+}
+
 /*ARREGLO HEADINGS INFOMAP*/
 
 .infoTitle h1{
