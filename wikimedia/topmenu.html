@@ -1,0 +1,117 @@
+<meta charset="utf-8">
+<style>
+    *{
+        padding: 0;
+        margin:0;
+    }
+
+    .top-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #000;
+        color: #FFF;
+        font-family: arial;
+        font-weight: bold;
+        line-height: 50px;
+        position: absolute;
+    }
+    .top-bar ul{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+    }
+    .top-bar li{
+        list-style-type: none;
+        padding-right: 25px;
+    }
+    .top-bar li a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .top-bar li a:hover{
+        color:#EA0206;
+    }
+    .fb a:hover{
+        color:#3B5998 !important;
+    }
+    .tw a:hover{
+        color:#9AE4E8 !important;
+    }
+    .inst a:hover{
+        color:#3F729B !important;
+    }
+    .yt a:hover{
+        color:#CC181E !important;
+    }
+    #sub-menu{
+        top:50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        background-color: #000;
+        color: #FFF;
+        font-family: arial;
+        font-weight: bold;
+        line-height: 50px;
+        display: none;
+    }
+    #sub-menu li{
+        flex-direction: column;
+        height: 30px;
+        margin-left: 5px;
+
+    }
+    .cincoLinks{
+        height: 170px !important;
+    }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#nosotrosLink").mouseover(function(){
+            $(".cincoLinks").slideToggle("slow");
+        });
+        $("#generoLink").mouseover(function(){
+            $(".generosub").slideToggle("slow");
+        });
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+<div class="top-bar">
+    <div class="top-nav clearfix">                                
+        <div id="top-menu">
+            <ul class="menu">
+                <li><a href="http://www.wikimedia.org.ar/#" id="nosotrosLink">Nosotros</a>
+                    <ul id="sub-menu" class="cincoLinks">
+                    	<li ><a href="http://www.wikimedia.org.ar/equipo/">El Equipo</a></li>
+                    	<li><a href="http://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
+                    	<li><a href="http://www.wikimedia.org.ar/que-es/estatuto-social/">Estatuto Social</a></li>
+                    	<li><a href="http://www.wikimedia.org.ar/que-es/finanzas/">Balances</a></li>
+                    	<li><a href="http://www.wikimedia.org.ar/donaciones/">Donaciones</a></li>
+                    </ul><!--sub menu -->
+                </li>
+                <li><a href="http://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
+                <li><a href="http://www.wikimedia.org.ar/glam/">Promoción de instituciones culturales</a></li>
+                <li><a href="http://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
+                <li><a href="http://www.wikimedia.org.ar/proyectos/brecha-de-genero/" id="generoLink">Género</a>
+                    <ul id="sub-menu" class="generosub">
+    	               <li><a href="http://www.wikimedia.org.ar/category/les-expertes/">Les Expertes</a></li>
+                    </ul><!-- fin submenu-->
+                </li>
+                <li><a href="http://www.wikimedia.org.ar/contacto/">Contacto</a></li>
+            </ul><!-- class menu -->
+        </div><!-- fin top menu -->
+    </div> 
+    <div class="header-social">
+        <ul class="clearfix">
+            <li class="social-icon fb"><a title="Facebook" href="https://www.facebook.com/WikimediaArgentina/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-icon tw"><a class="bk-tipper-bottom" title="Twitter" href="https://twitter.com/wikimedia_ar" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-icon inst"><a title="Instagram" href="https://www.instagram.com/wikimedia_ar/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="social-icon yt"><a title="Youtube" href="https://www.youtube.com/channel/UCv5_XQA53DDuAjLLQu-6-AA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        </ul><!-- fin ul-->
+    </div><!-- fin header social-->
+</div><!-- fin top bar -->
