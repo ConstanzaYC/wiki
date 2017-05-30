@@ -123,6 +123,7 @@ p, li {
 .pie{
   height: 80px;
   background: #333;
+  margin-bottom: -20px;
 }
 .pie img{
   margin-top: 10px;
