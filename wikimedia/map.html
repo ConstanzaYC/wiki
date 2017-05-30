@@ -19,11 +19,20 @@
     <script>
         $(document).ready(function(){
             $("#nosotrosLink").mouseover(function(){
-                $(".cincoLinks").slideToggle("slow");
+                $(".cincoLinks").toggle("fast");
             });
+
             $("#generoLink").mouseover(function(){
-                $(".generosub").slideToggle("slow");
+                $(".generosub").toggle("fast");
             });
+            $(".generomobile").click(function(){
+                $(".sub-genero-mobile").toggle("fast");
+            });
+
+            $(".nosotrosmobile").click(function(){
+                $(".sub-nosotros-mobile").toggle("fast");
+            });
+
         });
     </script>
   </head>
@@ -50,22 +59,21 @@
                     </ul><!-- fin submenu-->
                 </li>
                 <li><a href="http://www.wikimedia.org.ar/contacto/">Contacto</a></li>
-            </ul><!-- class menu -->
-        </div><!-- fin top menu -->
-    </div> 
-    <div class="header-social">
-        <ul class="clearfix">
-            <li class="social-icon fb"><a title="Facebook" href="https://www.facebook.com/WikimediaArgentina/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="social-icon fb"><a title="Facebook" href="https://www.facebook.com/WikimediaArgentina/" target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li class="social-icon tw"><a class="bk-tipper-bottom" title="Twitter" href="https://twitter.com/wikimedia_ar" target="_blank"><i class="fa fa-twitter"></i></a></li>
             <li class="social-icon inst"><a title="Instagram" href="https://www.instagram.com/wikimedia_ar/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li class="social-icon yt"><a title="Youtube" href="https://www.youtube.com/channel/UCv5_XQA53DDuAjLLQu-6-AA" target="_blank"><i class="fa fa-youtube"></i></a></li>
-        </ul><!-- fin ul-->
-    </div><!-- fin header social-->
-</div><!-- fin top bar -->
+            </ul><!-- class menu -->
+        </div><!-- fin top menu -->
+    </div> 
 
+            
+
+
+</div><!-- fin top bar -->
   <!-- mobile-bar -->
     <div class="mobile-bar">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars hamburger" aria-hidden="true"></i>
           </span>
     </div>
 
@@ -77,8 +85,8 @@
           <div class="menu-mobile">
                 <h3> Top Menu </h3>
                 <ul>
-                  <li><a href="http://www.wikimedia.org.ar/#">Nosotros</a>
-                <ul class="sub-menu-mobile">
+                  <li><a>Nosotros</a><button class="nosotrosmobile"><i class="fa fa-chevron-down" aria-hidden="true"></i></button> 
+                <ul class="sub-nosotros-mobile">
                   <li><a href="http://www.wikimedia.org.ar/equipo/">El Equipo</a></li>
                   <li><a href="http://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
                   <li><a href="http://www.wikimedia.org.ar/que-es/estatuto-social/">Estatuto Social</a></li>
@@ -89,8 +97,8 @@
                   <li><a href="http://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
               <li><a href="http://www.wikimedia.org.ar/glam/">Promoción de instituciones culturales</a></li>
               <li><a href="http://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
-              <li><a href="http://www.wikimedia.org.ar/proyectos/brecha-de-genero/">Género</a>
-                <ul class="sub-menu-mobile">
+              <li ><a href="http://www.wikimedia.org.ar/proyectos/brecha-de-genero/">Género</a><button class="generomobile"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                <ul class="sub-genero-mobile">
                   <li><a href="http://www.wikimedia.org.ar/category/les-expertes/">Les Expertes</a></li>
                 </ul><!-- fin class submenu-->
               </li><!-- fin li género-->
@@ -544,6 +552,7 @@
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("contenido").style.marginLeft= "0";
     }
+
 
     </script>
     <script async defer

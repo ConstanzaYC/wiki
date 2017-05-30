@@ -4,146 +4,33 @@
 	box-sizing: border-box;
 
 }
-/* top bar menu */
-    .top-bar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        background-color: #000;
-        color: #FFF;
-        font-family: arial;
-        font-weight: bold;
-        height: 48px;
-        line-height: 48px;
-    }
-    .top-bar ul{
-        display: flex;
-        flex-direction: row;
-        height: 50px;
-    }
-    .top-bar li{
-        list-style-type: none;
-        padding-right: 25px;
-    }
-    .top-bar li a{
-        text-decoration: none;
-        color: #FFF;
-    }
-    .top-bar li a:hover{
-        color:#EA0206;
-    }
-    .fb a:hover{
-        color:#3B5998 !important;
-    }
-    .tw a:hover{
-        color:#9AE4E8 !important;
-    }
-    .inst a:hover{
-        color:#3F729B !important;
-    }
-    .yt a:hover{
-        color:#CC181E !important;
-    }
-    #sub-menu{
-        top:50px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: no-wrap;
-        background-color: #000;
-        color: #FFF;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: bold;
-        line-height: 50px;
-        display: none;
-        z-index: 1000;
-    }
-    #sub-menu li{
-        flex-direction: column;
-        height: 30px;
-        margin-left: 5px;
-
-    }
-    .cincoLinks{
-        height: 170px !important;
-    }
-/* mobile */
-/* SETTEO DE MAPA */
-#map {
-        height:600px;
-        width: 80%;
-        margin: auto;
-        z-index:2;
-}
-/*ARREGLOS NAV*/
-.fixed{
-	height: 60px;
-	width: 100%;
-}
-/*ESTILOS BODY*/
-
-.subtitulos{
-margin: 8px 0px;
-border-bottom: 4px solid #333;
-}
-
-.subtitulos h3 {
-  display: inline-block;
-  margin: 0;
-  padding: 8px 24px;
-  background: #333;
-  line-height: 1;
-  color:#FFF;  
-}
-
-.familia-fuente{
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 550;
-	font-size: 1.3em;
-  padding: 8px 5px;
-  margin-top: 5;
-}
-
-#titulo{
-font-family: 'Work Sans', sans-serif;
-font-weight: 700;
-font-size: 2.5em;
-margin-left: 1.5%;
-}
-
-p, li {
-	font-family: 'Lato', sans-serif;
-	font-size: 1em;
-  color: #333333;
-}
-.rojo{
-  color: red;
-}
-
-.pie{
-  height: 80px;
-  background: #333;
-  margin-bottom: -20px;
-}
-.pie img{
-  margin-top: 10px;
-}
-.licencia-commons{
-  color: #FFF;
-  margin-top: 30px;
-}
-.commons{
-  color:#FFF;
-  text-decoration: none;
-}
-.commons:hover{
-  color:#FFF;
-}
-
 /* MENU MOBILE*/
-/*.mobile{
+.menu-mobile li button{
+  background-color: transparent;
+  border: none;
+}
+.fa-chevron-down{
+  color:#EA0000;
+}
+.mobile-bar{
   display: none;
-}*/
+  height: 100%;
+  top: 0;
+  background-color: #000;
+  color: #FFF;
+}
+.sub-nosotros-mobile, .sub-genero-mobile{
+  display:none;
+}
+.btn-menu{
+  font-size:30px;
+  cursor:pointer;
+}
+.hamburger{
+  color: #FFF;
+  margin-left: 15px;
+  
+}
 #mySidenav{
   font-size: 1em;
 }
@@ -171,21 +58,6 @@ p, li {
     transition: 0.5s;
     padding-top: 60px;
   }
-      /* scroll bar */
-     .sidenav::-webkit-scrollbar {
-          width: 12px;
-      }
-       
-      .sidenav::-webkit-scrollbar-track {
-          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-          border-radius: 10px;
-      }
-       
-      .sidenav::-webkit-scrollbar-thumb {
-          border-radius: 10px;
-          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-      }
-
 
 .sidenav a {
     padding: 8px 8px 8px 25px;
@@ -218,6 +90,177 @@ p, li {
     /*font-size: 36px;
     margin-left: 50px;*/
 }
+/* top bar menu */
+    .top-bar {
+        display: inline;
+        width: 100%;
+        background-color: #000;
+        color: #FFF;
+        font-family: arial;
+        font-weight: bold;
+        height: 50px;
+        line-height: 45px;
+        z-index: 3;
+        top: 0;
+        padding-top: 5px;
+        align-content: center;
+        position: absolute;
+    }
+    .top-bar ul{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        flex: none;
+        position:absolute;
+    }
+    .top-bar li{
+        list-style-type: none;
+        padding-right: 20px;
+        flex: none
+    }
+    .top-bar li a{
+        text-decoration: none;
+        color: #FFF;
+        flex: none
+    }
+    .top-bar li a:hover{
+        color:#EA0206;
+    }
+    .fb{
+      margin-left: 350px;
+    }
+    .fb a:hover{
+        color:#3B5998 !important;
+    }
+    .tw a:hover{
+        color:#9AE4E8 !important;
+    }
+    .inst a:hover{
+        color:#3F729B !important;
+    }
+    .yt a:hover{
+        color:#CC181E !important;
+    }
+
+    #sub-menu{
+        display: none;
+        background-color: #000;
+        color: #FFF;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+        z-index: 1000;   
+    }
+    #sub-menu li{
+      height: 25px;       
+    }
+    #sub-menu li a{
+      padding-left: 0 !important;
+      margin-left: 2px!important; 
+      padding-bottom: 5px; 
+    }
+    .cincoLinks{
+       height: 140px !important;
+        z-index: 1000!important;
+        border-top: 2px solid #CC181E !important;
+    }
+    .generosub{
+      border-top: 2px solid #CC181E !important;
+      align-self: center;
+      height: 30px !important;
+    }
+/* SETTEO DE MAPA */
+#map {
+        height:600px;
+        width: 80%;
+        margin: auto;
+        z-index:2;
+}
+/*ARREGLOS NAV*/
+.fixed{
+	height: 60px;
+	width: 100%;
+}
+/*ESTILOS BODY*/
+#contenido{
+  z-index: 1;
+  margin-top: 25px;
+}
+#contenido ul{
+  display: block!important;
+  position:static !important;
+  height:initial !important;
+  
+}
+#contenido li {
+  list-style-type: disc !important;
+}
+#contenido li ul li {
+  list-style-type: circle !important;
+}
+
+.subtitulos{
+margin: 8px 0px;
+border-bottom: 4px solid #333;
+}
+
+.subtitulos h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 24px;
+  background: #333;
+  line-height: 1;
+  color:#FFF;  
+}
+
+.familia-fuente{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 550 !important;
+	font-size: 1.3em!important;
+  padding: 8px 5px !important;
+  margin-top: 5;
+}
+
+#titulo{
+font-family: 'Work Sans', sans-serif;
+font-weight: 700;
+font-size: 2.5em;
+margin-left: 1.5%;
+z-index:0;
+color: #333!important;
+}
+
+#contenido p, #contenido li {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+  color: #333333;
+  font-weight: normal;
+}
+.rojo{
+  color: red;
+}
+
+.pie{
+  height: 80px;
+  background: #333;
+  margin-bottom: -20px;
+}
+.pie img{
+  margin-top: 10px;
+}
+.licencia-commons{
+  color: #FFF;
+  margin-top: 30px;
+  font-weight: normal;
+}
+.commons{
+  color:#FFF;
+  text-decoration: none;
+  font-weight: normal;
+}
+.commons:hover{
+  color:#FFF;
+}
+
 
 /*ARREGLO HEADINGS INFOMAP*/
 
@@ -232,6 +275,30 @@ p, li {
 }
 
 /* MEDIAS */
+@media (max-width: 1305px) {
+  .fb{
+      margin-left: 250px;
+    }
+}
+@media (max-width: 1205px) {
+  .fb{
+      margin-left: 150px;
+    }
+}
+@media (max-width: 1105px) {
+  .fb{
+      margin-left: 50px;
+    }
+}
+@media (max-width: 1105px) {
+  .top-bar{
+    display: none;
+  }
+  .mobile-bar{
+    display: block;
+  }
+}
+
 @media (max-width: 700px) {
   #map{
     height: 400px;
