@@ -75,7 +75,7 @@
 
 </div><!-- fin top bar -->
   <!-- mobile-bar -->
-    <div class="mobile-bar">
+    <div class="mobile-bar" id="mobile-bar">
         <span class="span-ham" onclick="openNav()"><i class="fa fa-bars hamburger" aria-hidden="true"></i>
           </span>
     </div>
@@ -550,6 +550,7 @@
         document.getElementById("mySidenav").style.width = "300px";
         document.getElementById("contenido").style.marginLeft = "300px";
 		document.getElementById("contenido").style.marginRight = "-300px";
+		document.getElementById("mobile-bar").style.marginRight = "-300px";
 		document.getElementById("contenido").style.overflow = "hidden";
 		document.getElementById("contenido").style.filter = "grayscale(100%)";
 
@@ -559,6 +560,7 @@
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("contenido").style.marginLeft= "0";
 		document.getElementById("contenido").style.marginRight= "0";
+		document.getElementById("mobile-bar").style.marginRight = "0";
 		document.getElementById("contenido").style.overflow = "visible";
 		document.getElementById("contenido").style.filter = "none";
 
