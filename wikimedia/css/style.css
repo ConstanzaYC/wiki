@@ -43,10 +43,8 @@ body{
 }
 #mySidenav{
   font-size: 1em;
-}
-#contenido{
-  transition: margin-left .5s;
-  padding: 16px;
+  position: fixed;
+  z-index: 1000;
 }
 .closebtn{
   height: 47px;
@@ -205,6 +203,8 @@ body{
   z-index: 1;
   margin-top: 25px;
   position:relative;
+  transition: margin-left .5s;
+  padding: 16px;
 }
 #contenido ul{
   display: block!important;

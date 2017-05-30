@@ -549,11 +549,19 @@
     function openNav() {
         document.getElementById("mySidenav").style.width = "300px";
         document.getElementById("contenido").style.marginLeft = "300px";
+		document.getElementById("contenido").style.marginRight = "-300px";
+		document.getElementById("contenido").style.overflow = "hidden";
+		document.getElementById("contenido").style.filter = "grayscale(100%)";
+
     }
 
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("contenido").style.marginLeft= "0";
+		document.getElementById("contenido").style.marginRight= "0";
+		document.getElementById("contenido").style.overflow = "visible";
+		document.getElementById("contenido").style.filter = "none";
+
     }
 
 
