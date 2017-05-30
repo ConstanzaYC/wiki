@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Capacitaciones sobre Wikipedia</title>
+    <title>Educación en Iberocoop</title>
     <meta charset="utf-8">
     
     <!-- DESCRIPCIÓN DE CONTENIDO -->
-    <meta name="description" content="Sitio sobre las capacitaciones y charlas sobre Wikipedia organizadas por Wikimedia">
+    <meta name="description" content="Sitio informativo sobre las capacitaciones y charlas sobre Wikipedia.">
     <meta name="keywords" content="Wikimedia,Wiki,Wikipedia,Charlas,Capacitaciones,Capacitación">
     <meta name="author" content="Wikimedia, Daniela Belvedere, Constanza Yáñez Calderón">
       <!-- hojas de estilo -->
@@ -31,6 +31,9 @@
 
             $(".nosotrosmobile").click(function(){
                 $(".sub-nosotros-mobile").toggle("fast");
+            });
+            $(".programasmobile").click(function(){
+                $(".sub-programas-mobile").toggle("fast");
             });
 
         });
@@ -73,7 +76,7 @@
 </div><!-- fin top bar -->
   <!-- mobile-bar -->
     <div class="mobile-bar">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars hamburger" aria-hidden="true"></i>
+        <span class="span-ham" onclick="openNav()"><i class="fa fa-bars hamburger" aria-hidden="true"></i>
           </span>
     </div>
 
@@ -85,7 +88,7 @@
           <div class="menu-mobile">
                 <h3> Top Menu </h3>
                 <ul>
-                  <li><a>Nosotros</a><button class="nosotrosmobile"><i class="fa fa-chevron-down" aria-hidden="true"></i></button> 
+                  <li><a class="underline">Nosotros</a><button class="nosotrosmobile"><i class="fa fa-chevron-down" aria-hidden="true"></i></button> 
                 <ul class="sub-nosotros-mobile">
                   <li><a href="http://www.wikimedia.org.ar/equipo/">El Equipo</a></li>
                   <li><a href="http://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
@@ -97,7 +100,7 @@
                   <li><a href="http://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
               <li><a href="http://www.wikimedia.org.ar/glam/">Promoción de instituciones culturales</a></li>
               <li><a href="http://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
-              <li ><a href="http://www.wikimedia.org.ar/proyectos/brecha-de-genero/">Género</a><button class="generomobile"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+              <li ><a href="http://www.wikimedia.org.ar/proyectos/brecha-de-genero/" class="underline">Género</a><button class="generomobile"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                 <ul class="sub-genero-mobile">
                   <li><a href="http://www.wikimedia.org.ar/category/les-expertes/">Les Expertes</a></li>
                 </ul><!-- fin class submenu-->
@@ -108,8 +111,8 @@
                 <div class="main-menu">
                 <h3>Menú principal</h3>
                     <ul>
-                      <li><a>Programas</a>
-                        <ul class="sub-menu-mobile">
+                      <li><a class="underline">Programas</a></a><button class="programasmobile"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                        <ul class="sub-programas-mobile">
                           <li><a href="http://www.wikimedia.org.ar/glam/">Promoción de instituciones culturales</a></li>
                           <li><a href="http://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
                           <li><a href="http://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
@@ -125,7 +128,7 @@
     <div class="container-fluid" id="contenido">
       <header class="row">
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
-          <h1 id="titulo">CAPACITACIONES Y CHARLAS SOBRE WIKIPEDIA</h1>
+          <h1 id="titulo">EDUCACIÓN EN IBEROCOOP</h1>
         </div>
       </header><!-- fin header-->
       <div class="row" id="map"></div>
@@ -321,7 +324,7 @@
             </ul>
           <p><strong>Resultados: </strong></p>
             <ul>
-              <li>Desde 2014 se han creado más de 60 artículos en Wikipedia</li>
+              <li class="arreglo-footer">Desde 2014 se han creado más de 60 artículos en Wikipedia</li>
             </ul>
         </div>
 
@@ -332,7 +335,7 @@
             <a href="http://www.wikimedia.org.ar/" target="_blank"><img src="img/logo-header.png" class="img-responsive"/></a>  
           </div>
           <div class="col-sx-6 col-sm-6 col-md-6 licencia-commons">
-            <span class="pull-right">Esta obra está bajo una <a class="commons" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional.</a></span>
+            <span>Esta obra está bajo una <a class="commons" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional.</a></span>
           </div>
         </div><!--fin div col-12-->
       </footer><!--fin footer-->

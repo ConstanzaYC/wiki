@@ -4,8 +4,11 @@
 	box-sizing: border-box;
 
 }
+body{
+  position:relative;
+}
 /* MENU MOBILE*/
-.menu-mobile li button{
+.menu-mobile li button, .main-menu li button{
   background-color: transparent;
   border: none;
 }
@@ -19,8 +22,11 @@
   background-color: #000;
   color: #FFF;
 }
-.sub-nosotros-mobile, .sub-genero-mobile{
+.sub-nosotros-mobile, .sub-genero-mobile, .sub-programas-mobile{
   display:none;
+}
+.nosotrosmobile, .generomobile, .programasmobile{
+  display: inline;
 }
 .btn-menu{
   font-size:30px;
@@ -31,6 +37,10 @@
   margin-left: 15px;
   
 }
+.span-ham{
+  font-size:1.5em;
+  cursor:pointer;
+}
 #mySidenav{
   font-size: 1em;
 }
@@ -39,13 +49,21 @@
   padding: 16px;
 }
 .closebtn{
-  height:60px;
+  height: 47px;
   width: 100%;
   background-color: #000;
   border-bottom: 2px solid #EA0000;
-
 }
-
+.flecha{
+  font-size: 14px !important;
+  margin-top: 5px!important;
+}
+.underline{
+  display: inline !important;
+}
+.underline:hover{
+  cursor: pointer;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -61,8 +79,8 @@
 
 .sidenav a {
     padding: 8px 8px 8px 25px;
-    text-decoration: none;
-    font-size: 25px;
+    text-decoration: none !important;
+    font-size: 1.5em;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -76,16 +94,18 @@
 }
 .menu-mobile h3, .main-menu h3 {
   text-decoration:  underline #EA0000;
-
   color: #FFF;
+  margin-top: -10px;
+  margin-left: 5px;
+  font-size: 1.5em !important;
 }
 .sidenav li{
   list-style-type: none;
   color:#ECECF0;
 }
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
+    position: absolute !important;
+    top: -15px;
     right: 0px;
     /*font-size: 36px;
     margin-left: 50px;*/
@@ -101,10 +121,10 @@
         height: 50px;
         line-height: 45px;
         z-index: 3;
-        top: 0;
+        top: -30px;
         padding-top: 5px;
         align-content: center;
-        position: absolute;
+        position: absolute!important;
     }
     .top-bar ul{
         display: flex;
@@ -184,6 +204,7 @@
 #contenido{
   z-index: 1;
   margin-top: 25px;
+  position:relative;
 }
 #contenido ul{
   display: block!important;
@@ -238,19 +259,29 @@ color: #333!important;
 .rojo{
   color: red;
 }
-
-.pie{
+/* footer */
+.arreglo-footer{
+  margin-bottom: 70px;
+}
+footer{
   height: 80px;
+  width: 100%;
   background: #333;
   margin-bottom: -20px;
+  position: absolute;
+  right: -50px!important;
+  bottom: 0;
+  left: 0;
+  margin-left: 0 !important;
 }
 .pie img{
   margin-top: 10px;
 }
 .licencia-commons{
-  color: #FFF;
+  color: #FFF!important;
   margin-top: 30px;
   font-weight: normal;
+  text-align: right;
 }
 .commons{
   color:#FFF;
@@ -297,17 +328,49 @@ color: #333!important;
   .mobile-bar{
     display: block;
   }
+  #titulo{
+    margin-top: -15px;
+  }
 }
-
+@media (max-width: 768px) {
+  footer{
+    height: 100px;
+    bottom: 0;
+  }
+  .pie img{
+    margin: 0 auto !important;
+    padding-top: 5px;
+  }
+  .licencia-commons{
+    margin-top: 5px;
+    text-align: center !important;
+  }
+}
 @media (max-width: 700px) {
   #map{
     height: 400px;
+  }
+}
+@media (max-width: 572px) {
+  footer{
+    height: 120px;
+    bottom: 0;
+  }
+  .arreglo-footer{
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 500px) {
   #map{
     height: 300px;
     width: 100%;
+  }
+}
+@media (max-width: 427px) {
+  #titulo{
+    font-weight: 500;
+    font-size: 2.5em;
+    margin-left: -15px;
   }
 }
 
