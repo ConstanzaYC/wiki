@@ -389,8 +389,11 @@
           title: 'unam'
         });
         markerA.addListener('click', function() {
+          for (var i = 0; i < infoWindows.length; i++) {
+            infoWindows[i].close(map, markerA);
+          }
           infowindowA.open(map, markerA);
-        });
+        });  
          //Declaración de contenido B
         var contentStringB = '<div id="content" class="infoTitle">'+
             '<div id="siteNotice">'+
@@ -414,6 +417,9 @@
           title: 'uab'
         });
         markerB.addListener('click', function() {
+          for (var i = 0; i < infoWindows.length; i++) {
+            infoWindows[i].close(map, markerB);
+          }
           infowindowB.open(map, markerB);
         });
         //Declaración de contenido C
@@ -439,6 +445,9 @@
           title: 'UG'
         });
         markerC.addListener('click', function() {
+          for (var i = 0; i < infoWindows.length; i++) {
+            infoWindows[i].close(map, markerC);
+          }
           infowindowC.open(map, markerC);
         });
         //Declaración de contenido D
@@ -464,6 +473,9 @@
           title: 'UNRN'
         });
         markerD.addListener('click', function() {
+          for (var i = 0; i < infoWindows.length; i++) {
+            infoWindows[i].close(map, markerD);
+          }
           infowindowD.open(map, markerD);
         });
         //Declaración de contenido E
@@ -489,6 +501,9 @@
           title: 'Ministerio de La Rioja'
         });
         markerE.addListener('click', function() {
+          for (var i = 0; i < infoWindows.length; i++) {
+            infoWindows[i].close(map, markerE);
+          }
           infowindowE.open(map, markerE);
         });
         //Declaración de contenido F
@@ -514,6 +529,9 @@
           title: 'Instituto Técnico Secundario Ingeniero Huergo'
         });
         markerF.addListener('click', function() {
+          for (var i = 0; i < infoWindows.length; i++) {
+            infoWindows[i].close(map, markerF);
+          }
           infowindowF.open(map, markerF);
         });
         //Declaración de contenido G
@@ -539,8 +557,12 @@
           title: 'UAH'
         });
         markerG.addListener('click', function() {
+        for (var i = 0; i < infoWindows.length; i++) {
+            infoWindows[i].close(map, markerG);
+          }
           infowindowG.open(map, markerG);
         });
+        var infoWindows = [infowindowA, infowindowB, infowindowC, infowindowD, infowindowE, infowindowF, infowindowG];
       }//ESTE CIERRA TODO
     </script>
     <!-- script para menu mobile -->
