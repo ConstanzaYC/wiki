@@ -189,7 +189,7 @@ body{
 /* SETTEO DE MAPA */
 #map {
         height:600px;
-        width: 80%;
+        width: 100%;
         margin: auto;
         z-index:2;
 }
@@ -220,15 +220,15 @@ body{
 }
 
 .subtitulos{
-margin: 8px 0px;
-border-bottom: 4px solid #333;
+margin: 1% 0%;
+border-bottom: 4px solid #006699;
 }
 
 .subtitulos h3 {
   display: inline-block;
   margin: 0;
   padding: 8px 24px;
-  background: #333;
+  background: #006699;
   line-height: 1;
   color:#FFF;  
 }
@@ -241,6 +241,10 @@ border-bottom: 4px solid #333;
   margin-top: 5;
 }
 
+#iberocoop-titulo{
+  display: inline-flex;
+  margin: 1.5%;
+}
 #titulo{
 font-family: 'Work Sans', sans-serif;
 font-weight: 700;
