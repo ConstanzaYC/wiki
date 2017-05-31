@@ -381,7 +381,7 @@ footer{
 @media (max-width: 500px) {
   #map{
     height: 300px;
-    width: 100%;
+    width: calc(100%+30px);
   }
 }
 @media (max-width: 483px) {
