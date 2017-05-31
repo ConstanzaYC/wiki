@@ -363,7 +363,12 @@
             zoomControl: false,
             scaleControl: false
 
-          });// fin objeto mapa
+          });
+          map.setOptions({ 
+          	minZoom: 3, 
+          	maxZoom: 3 
+          });
+          // fin objeto mapa
 
         //Declaración de contenido A
         var contentStringA = '<div id="content" class="infoTitle">'+
