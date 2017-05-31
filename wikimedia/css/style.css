@@ -189,8 +189,9 @@ body{
 /* SETTEO DE MAPA */
 #map {
         height:600px;
-        width: 100%;
-        margin: auto;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
         z-index:2;
 }
 /*ARREGLOS NAV*/
@@ -257,8 +258,10 @@ align-self: center;
 z-index:0;
 color: #333!important;
 }
-
-#contenido p, #contenido li {
+.contenido{
+  margin-top: 10px;
+}
+.contenido p, .contenido li {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em;
   color: #333333;
@@ -339,7 +342,10 @@ footer{
 }
 @media (max-width: 817px) {
   #titulo{
-    margin-top: -8px;
+    margin-top: 0px;
+  }
+  .contenido{
+    margin-top: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -363,8 +369,8 @@ footer{
 }
 
 @media (max-width: 572px) {
-  footer{
 
+  footer{
     height: 120px;
     bottom: 0;
   }
