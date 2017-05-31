@@ -243,13 +243,17 @@ border-bottom: 4px solid #006699;
 
 #iberocoop-titulo{
   display: inline-flex;
-  margin: 1.5%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+.icono-ibero{
+  padding-right: 0!important;
 }
 #titulo{
 font-family: 'Work Sans', sans-serif;
 font-weight: 700;
 font-size: 2.5em;
-margin-left: 1.5%;
+align-self: center;
 z-index:0;
 color: #333!important;
 }
@@ -332,8 +336,10 @@ footer{
   .mobile-bar{
     display: block;
   }
+}
+@media (max-width: 817px) {
   #titulo{
-    margin-top: -15px;
+    margin-top: -8px;
   }
 }
 @media (max-width: 768px) {
@@ -355,8 +361,10 @@ footer{
     height: 400px;
   }
 }
+
 @media (max-width: 572px) {
   footer{
+
     height: 120px;
     bottom: 0;
   }
@@ -370,11 +378,27 @@ footer{
     width: 100%;
   }
 }
-@media (max-width: 427px) {
+@media (max-width: 483px) {
   #titulo{
-    font-weight: 500;
-    font-size: 2.5em;
-    margin-left: -15px;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 370px) {
+  .icono-ibero{
+    margin-left: -10px!important;
+  }
+  #titulo{
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 321px) {
+  #titulo{
+    font-weight: 700;
+    font-size: 1.3em;
   }
 }
 

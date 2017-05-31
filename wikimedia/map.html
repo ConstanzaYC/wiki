@@ -127,9 +127,13 @@
 
     <div class="container-fluid" id="contenido">
       <header class="row">
-        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10" id="iberocoop-titulo">
-          <img src="img/Logo_Iberocoop.svg.png/" alt="logo Iberocoop" class="img-responsive"> 
-          <h1 id="titulo">EDUCACIÓN EN IBEROCOOP</h1>
+        <div class=" col-xs-12 col-sm-12 col-md-12" id="iberocoop-titulo">
+          <div class="col-xs-offset-1 col-xs-3 col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 icono-ibero">
+            <img src="img/Logo_Iberocoop.svg.png/" alt="logo Iberocoop" class="img-responsive pull-right"> 
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-8">
+            <h1 id="titulo">EDUCACIÓN EN IBEROCOOP</h1>
+          </div>
         </div>
       </header><!-- fin header-->
       <div class="row" id="map"></div>
@@ -363,7 +367,12 @@
             zoomControl: false,
             scaleControl: false
 
-          });// fin objeto mapa
+          });
+          map.setOptions({ 
+          	minZoom: 3, 
+          	maxZoom: 3 
+          });
+          // fin objeto mapa
 
         //Declaración de contenido A
         var contentStringA = '<div id="content" class="infoTitle">'+
