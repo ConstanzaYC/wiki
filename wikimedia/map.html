@@ -3,7 +3,8 @@
   <head>
     <title>Educación en Iberocoop</title>
     <meta charset="utf-8">
-    
+    <!-- FAVICON -->
+	<link rel="icon" href="img/fav.png" type="image">
     <!-- DESCRIPCIÓN DE CONTENIDO -->
     <meta name="description" content="Sitio informativo sobre las capacitaciones y charlas sobre Wikipedia.">
     <meta name="keywords" content="Wikimedia,Wiki,Wikipedia,Charlas,Capacitaciones,Capacitación">
@@ -129,7 +130,7 @@
       <header class="row">
         <div class=" col-xs-12 col-sm-12 col-md-12" id="iberocoop-titulo">
           <div class="col-xs-offset-1 col-xs-3 col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 icono-ibero">
-            <img src="img/Logo_Iberocoop.svg.png/" alt="logo Iberocoop" class="img-responsive pull-right"> 
+            <img src="img/Logo_Iberocoop.png" alt="logo Iberocoop" class="img-responsive pull-right"> 
           </div>
           <div class="col-xs-8 col-sm-8 col-md-8">
             <h1 id="titulo">EDUCACIÓN EN IBEROCOOP</h1>
@@ -364,15 +365,11 @@
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 2,
             center:centrado,
-            zoomControl: false,
+            zoomControl: true,
+			scrollwheel: false,
             scaleControl: false
 
-          });
-          map.setOptions({ 
-          	minZoom: 3, 
-          	maxZoom: 3 
-          });
-          // fin objeto mapa
+          });// fin objeto mapa
 
         //Declaración de contenido A
         var contentStringA = '<div id="content" class="infoTitle">'+
@@ -573,6 +570,13 @@
           infowindowG.open(map, markerG);
         });
         var infoWindows = [infowindowA, infowindowB, infowindowC, infowindowD, infowindowE, infowindowF, infowindowG];
+		//Zoom mapa
+			var markers = [markerA, markerB, markerC, markerD, markerE, markerF, markerG];//some array
+			var bounds = new google.maps.LatLngBounds();
+			for (var i = 0; i < markers.length; i++) {
+				bounds.extend(markers[i].getPosition());
+			}
+			map.fitBounds(bounds);
       }//ESTE CIERRA TODO
     </script>
     <!-- script para menu mobile -->
